@@ -1,35 +1,50 @@
-<header>
-    <h1>Live TV Navigator</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Categories</a></li>
-            <li><a href="#">My List</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section id="playlist-import">
-        <h2>Import Playlist</h2>
-        <form id="import-form">
-            <label for="playlist-url">M3U URL:</label>
-            <input type="url" id="playlist-url" placeholder="Enter M3U URL">
-            <button type="button" id="import-m3u">Import M3U</button>
-        </form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live TV Navigator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Live TV Navigator</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="playlist-import">
+            <h2>Import Playlist</h2>
+            <form id="import-form">
+                <label for="playlist-url">M3U URL:</label>
+                <input type="url" id="playlist-url" placeholder="Enter M3U URL">
+                <button type="button" id="import-m3u">Import M3U</button>
+            </form>
 
-        <form id="xtream-form">
-            <h3>Xtream Codes Login</h3>
-            <label for="xtream-url">Server URL:</label>
-            <input type="url" id="xtream-url" placeholder="Enter Server URL">
-            <label for="xtream-username">Username:</label>
-            <input type="text" id="xtream-username" placeholder="Enter Username">
-            <label for="xtream-password">Password:</label>
-            <input type="password" id="xtream-password" placeholder="Enter Password">
-            <button type="button" id="import-xtream">Import Xtream</button>
-        </form>
-    </section>
+            <form id="xtream-form">
+                <h3>Xtream Codes Login</h3>
+                <label for="xtream-url">Server URL:</label>
+                <input type="url" id="xtream-url" placeholder="Enter Server URL">
+                <label for="xtream-username">Username:</label>
+                <input type="text" id="xtream-username" placeholder="Enter Username">
+                <label for="xtream-password">Password:</label>
+                <input type="password" id="xtream-password" placeholder="Enter Password">
+                <button type="button" id="import-xtream">Import Xtream</button>
+            </form>
+        </section>
 
-    <section id="channel-list">
-        <!-- Channels will be dynamically populated -->
-    </section>
-</main>
+        <section id="channel-list">
+            <p id="placeholder-message">No channels loaded. Please import a playlist to view channels.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Live TV Navigator</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
